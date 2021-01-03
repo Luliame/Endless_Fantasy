@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          prefHeight="400.0" prefWidth="600.0">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="25.0" />
+        <ColumnConstraints percentWidth="25.0" />
+        <ColumnConstraints percentWidth="25.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="20" />
+        <RowConstraints percentHeight="10" />
+        <RowConstraints percentHeight="10" />
+        <RowConstraints percentHeight="10" />
+        <RowConstraints percentHeight="10" />
+        <RowConstraints percentHeight="10" />
+        <RowConstraints percentHeight="10" />
+    </rowConstraints>
+    <TableView GridPane.columnIndex="1"
+               GridPane.rowIndex="0"
+    >
+       <columns>
+           <TableColumn text="Commandes"></TableColumn>
+           <TableColumn text="Touches"></TableColumn>
+       </columns>
+    </TableView>
+</GridPane>

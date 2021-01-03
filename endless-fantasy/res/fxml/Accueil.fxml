@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          prefHeight="400.0" prefWidth="600.0"
+          fx:id="accueil_cont">
+    <columnConstraints>
+        <ColumnConstraints minWidth="300" percentWidth="25"/>
+        <ColumnConstraints minWidth="900" percentWidth="50"/>
+        <ColumnConstraints minWidth="300" percentWidth="25"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="1200" percentHeight="80"/>
+        <RowConstraints minHeight="300" percentHeight="20"/>
+    </rowConstraints>
+        <Text GridPane.rowIndex="0"
+              GridPane.columnIndex="0"
+              GridPane.columnSpan="3"
+              wrappingWidth="${accueil_cont.width}"
+              textAlignment="CENTER"
+              text="ENDLESS FANTASY">
+            <font>
+                <Font size="50"/>
+            </font>
+        </Text>
+        <Button GridPane.rowIndex="1"
+                GridPane.columnIndex="0"
+                prefWidth="${accueil_cont.width}"
+                prefHeight="${accueil_cont.height}"
+                text="Cimetière">
+            <font>
+                <Font size="15"/>
+            </font>
+            <GridPane.margin>
+                <Insets bottom="20" left="20" top="20"/>
+            </GridPane.margin>
+        </Button>
+        <Button GridPane.rowIndex="1"
+                GridPane.columnIndex="1"
+                prefWidth="${accueil_cont.width}"
+                prefHeight="${accueil_cont.height}"
+                text="Jouer"
+                fx:id="btnPlay"
+                onAction="#sendToCreaPerso">
+            <font>
+                <Font size="15"/>
+            </font>
+            <GridPane.margin>
+                <Insets bottom="20" top="20"/>
+            </GridPane.margin>
+        </Button>
+        <Button GridPane.rowIndex="1"
+                GridPane.columnIndex="2"
+                prefWidth="${accueil_cont.width}"
+                prefHeight="${accueil_cont.height}"
+                text="Paramètres"
+                fx:id="btnParam"
+                onAction="#sendToParam"
+                >
+            <font>
+                <Font size="15"/>
+            </font>
+            <GridPane.margin>
+                <Insets bottom="20" right ="20" top="20"/>
+            </GridPane.margin>
+        </Button>
+</GridPane>

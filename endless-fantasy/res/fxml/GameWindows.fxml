@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="Controller.GameWindowsController"
+          prefHeight="400.0" prefWidth="600.0">
+            <columnConstraints>
+                <ColumnConstraints percentWidth="40" />
+                <ColumnConstraints percentWidth="60" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="60" />
+                <RowConstraints percentHeight="40" />
+            </rowConstraints>
+            <GridPane GridPane.rowIndex="1"
+                      GridPane.columnIndex="0">
+                <columnConstraints>
+                    <ColumnConstraints percentWidth="50" />
+                    <ColumnConstraints percentWidth="50" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints percentHeight="25" />
+                    <RowConstraints percentHeight="25" />
+                    <RowConstraints percentHeight="25" />
+                    <RowConstraints percentHeight="25" />
+                </rowConstraints>
+                <ProgressBar GridPane.columnIndex="1"
+                        GridPane.rowIndex="0"
+                        progress="0.2" GridPane.halignment="CENTER"/>
+                <Text  GridPane.columnIndex="0"
+                       GridPane.rowIndex="0"
+                       text=" pv : 10/10"
+                       GridPane.halignment="CENTER"/>
+                <Text  GridPane.columnIndex="0"
+                       GridPane.rowIndex="1"
+                       text="10/10"
+                       GridPane.halignment="CENTER"/>
+                <Text  GridPane.columnIndex="1"
+                       GridPane.rowIndex="1"
+                       text="10/10"
+                       GridPane.halignment="CENTER"/>
+                <Text  GridPane.columnIndex="0"
+                       GridPane.rowIndex="2"
+                       text="10/10"
+                       GridPane.halignment="CENTER"/>
+                <Text  GridPane.columnIndex="1"
+                       GridPane.rowIndex="2"
+                       text="10/10"
+                       GridPane.halignment="CENTER"/>
+            </GridPane>
+            <GridPane GridPane.rowIndex="1"
+                      GridPane.columnIndex="1"
+                      id="battleMenu">
+               <columnConstraints>
+                   <ColumnConstraints percentWidth="50" />
+                   <ColumnConstraints percentWidth="50" />
+               </columnConstraints>
+               <rowConstraints>
+                   <RowConstraints percentHeight="50"/>
+                   <RowConstraints percentHeight="50"/>
+               </rowConstraints>
+                <Button GridPane.columnIndex="0"
+                        GridPane.rowIndex="0"
+                        text="Attaque"
+                ></Button>
+                <Button GridPane.columnIndex="1"
+                        GridPane.rowIndex="0"
+                        text = "Competence"
+                ></Button>
+                <Button GridPane.columnIndex="0"
+                        GridPane.rowIndex="1"
+                        text ="Check"
+                ></Button>
+                <Button GridPane.columnIndex="1"
+                        GridPane.rowIndex="1"
+                        text = "Objet"
+                ></Button>
+            </GridPane>
+
+</GridPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller.ParamController"
+            prefHeight="400.0" prefWidth="600.0">
+    <columnConstraints>
+        <ColumnConstraints percentWidth="20" />
+        <ColumnConstraints percentWidth="80" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="80" />
+        <RowConstraints percentHeight="20" />
+    </rowConstraints>
+
+    <VBox
+        GridPane.rowIndex="0"
+        GridPane.columnIndex="0">
+        <Button text="Commandes"
+                minWidth="100"
+        ></Button>
+        <Button text = "Affichage"
+                minWidth="100"
+        ></Button>
+        <Button text = "Son"
+                minWidth="100"
+        ></Button>
+    </VBox>
+    <fx:include source="Command.fxml"
+                GridPane.rowIndex="0"
+                GridPane.columnIndex="1"
+    ></fx:include>
+    <Button text ="Retour"
+            GridPane.columnIndex="0"
+            GridPane.rowIndex="1"
+            GridPane.halignment="LEFT"
+            GridPane.valignment="BOTTOM"
+            fx:id="btnReturn"
+            onAction="#sendToAcceuil"
+    ></Button>
+    <Button text ="Enregistrer"
+            GridPane.columnIndex="1"
+            GridPane.rowIndex="1"
+            GridPane.halignment="RIGHT"
+            GridPane.valignment="BOTTOM"
+    ></Button>
+</GridPane>

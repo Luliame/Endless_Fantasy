@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<GridPane fx:id="GridPane1"
+          id="GridPane1"
+          prefHeight="400.0"
+          prefWidth="600.0"
+          xmlns="http://javafx.com/javafx/11.0.1"
+          xmlns:fx="http://javafx.com/fxml/1"
+          >
+    <columnConstraints>
+        <ColumnConstraints percentWidth="25.0" />
+        <ColumnConstraints percentWidth="25.0" />
+        <ColumnConstraints percentWidth="25.0" />
+        <ColumnConstraints percentWidth="25.0" />
+      <ColumnConstraints />
+      <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints percentHeight="10" />
+        <RowConstraints percentHeight="10" />
+        <RowConstraints percentHeight="70" />
+        <RowConstraints percentHeight="10" />
+    </rowConstraints>
+    <Text text="Creation de Personnage"
+          textAlignment="CENTER" GridPane.columnIndex="1"
+          GridPane.columnSpan="2"
+          GridPane.halignment="CENTER"
+          GridPane.rowIndex="0"
+          GridPane.rowSpan="2"
+          GridPane.valignment="TOP">
+          <font>
+            <Font size="25" />
+          </font>
+    </Text>
+    <Label text="Nom du joueur :"
+           GridPane.columnIndex="0"
+           GridPane.halignment="CENTER"
+           GridPane.rowIndex="1" />
+    <TextField GridPane.rowIndex="1"
+               GridPane.columnIndex="1" ></TextField>
+    <Label text="Classe :"
+           GridPane.columnIndex="2"
+           GridPane.halignment="CENTER"
+           GridPane.rowIndex="1" />
+    <ComboBox id="ClassSelection"
+              GridPane.columnIndex="3"
+              GridPane.rowIndex="1"
+    ></ComboBox>
+
+
+        <GridPane  GridPane.rowIndex="2"
+                   GridPane.columnIndex="1"
+        >
+            <columnConstraints>
+                <ColumnConstraints percentWidth="25.0" />
+                <ColumnConstraints percentWidth="75.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints percentHeight="7.5" />
+                <RowConstraints percentHeight="2.5" />
+                <RowConstraints percentHeight="20" />
+                <RowConstraints percentHeight="20" />
+                <RowConstraints percentHeight="20" />
+                <RowConstraints percentHeight="20" />
+                <RowConstraints percentHeight="10" />
+            </rowConstraints>
+            <Label text="VOS STATS:"
+                   GridPane.columnIndex="0"
+                   GridPane.ColumnSpan="2"
+                   GridPane.halignment="CENTER"
+                   GridPane.rowIndex="0"></Label>
+            <Label text="FOR"
+                   GridPane.rowIndex="2"
+                   GridPane.columnIndex="0"></Label>
+            <Spinner GridPane.rowIndex="2"
+                     GridPane.columnIndex="1"
+            ></Spinner>
+            <Label text="FOR"
+                   GridPane.rowIndex="3"
+                   GridPane.columnIndex="0"></Label>
+            <Spinner GridPane.rowIndex="3"
+                     GridPane.columnIndex="1"
+            ></Spinner>
+            <Label text="FOR"
+                   GridPane.rowIndex="4"
+                   GridPane.columnIndex="0"></Label>
+            <Spinner GridPane.rowIndex="4"
+                     GridPane.columnIndex="1"
+            ></Spinner>
+            <Label text="FOR"
+                   GridPane.rowIndex="5"
+                   GridPane.columnIndex="0"></Label>
+            <Spinner GridPane.rowIndex="5"
+                     GridPane.columnIndex="1"
+            ></Spinner>
+            <Button text="Reset"
+                    GridPane.rowIndex="6"
+                    GridPane.columnIndex="0"
+            ></Button>
+        </GridPane>
+    <ImageView
+            GridPane.columnIndex="2"
+            GridPane.rowIndex="2"
+            fitHeight="200"
+            fitWidth="200"
+    >
+        <Image url="/Images/IMG_20200307_200951.jpg"/>
+    </ImageView>
+
+   <Button text="Retour"
+           fx:id="btnReturn"
+           GridPane.columnIndex="0"
+           GridPane.columnSpan="3"
+           GridPane.rowIndex="3"
+           GridPane.valignment="BOTTOM"
+           onAction="#sendToAcceuil"/>
+    <Button text="Jouer"
+            GridPane.columnIndex="2"
+            GridPane.columnSpan="3"
+            GridPane.halignment="RIGHT"
+            GridPane.rowIndex="3"
+            GridPane.valignment="BOTTOM"
+            fx:id="btnStartPlay"
+            onAction="#sendToGame"/>
+
+</GridPane>
